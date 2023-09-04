@@ -1,8 +1,11 @@
-import Cabecalho from "./components/Cabecalho";
+import Cabecalho from "./components/Cabecaho";
 import Conteudo from "./components/Conteudo";
 import Rodape from "./components/Rodape";
+import viteLogo from "./assets/vite.svg";
 
 export default function App(){
+
+  let viteLogoAlt = "Vite Logo";
   
   return(
     <>
@@ -14,7 +17,7 @@ export default function App(){
         
         
         {/*Iniciando a área do conteudo */}
-        <Conteudo/>   
+        <Conteudo viteLogoProps={viteLogo} viteLogoAltProps={viteLogoAlt}/>   
 
         {/*Iniciando a área do rodapé */}
         <Rodape/>
