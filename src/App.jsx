@@ -1,10 +1,24 @@
-import Menu from "./components/Menu"
+import Cabecalho from "./components/Cabecalho";
+import Conteudo from "./components/Conteudo";
+import Rodape from "./components/Rodape";
 
-export default function App() {
-  return (
-      <>
-        <h1>App</h1>
-        <h2>REACT</h2>
-      </>
+export default function App(){
+  
+  return(
+    <>
+      <h1>APP - Componente principal!</h1>
+      <div>
+
+        {/*Iniciando a área do cabeçalho */}
+        <Cabecalho/>
+        
+        
+        {/*Iniciando a área do conteudo */}
+        <Conteudo/>   
+
+        {/*Iniciando a área do rodapé */}
+        <Rodape/>
+      </div>
+    </>
   )
 }
